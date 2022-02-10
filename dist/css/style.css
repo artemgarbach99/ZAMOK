@@ -2304,6 +2304,42 @@ body.popup-show::after {
   color: #4295E4;
 }
 
+.cart-content-products__image {
+  position: relative;
+  display: block;
+  padding-bottom: 20rem;
+}
+.cart-content-products__image-ibg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.cart-content-products__block {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 17px 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-content-products__block-b {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cart-content-products__body {
+  padding: 10px 12px;
+  box-shadow: inset 0px -1px 0px #EAEAEA, inset 1px 0px 0px #EAEAEA, inset -1px 0px 0px #EAEAEA;
+}
+.cart-content-products__title {
+  font-size: 16px;
+  line-height: 26px;
+  color: #454F5B;
+  margin: 6px 0px 10px 0px;
+}
 .header {
   position: relative;
 }
@@ -3943,39 +3979,14 @@ body.popup-show::after {
 }
 .content-products__body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16.25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  grid-template-rows: 28.3125rem;
   gap: 1.875rem;
 }
-.content-products__cart {
-  position: relative;
-}
-.content-products__image img {
-  width: 100%;
-  height: 20rem;
-}
-.content-products__block {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 17px 12px;
-  display: flex;
-  justify-content: space-between;
-}
-.content-products__block-b {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.content-products__bottom {
-  padding: 10px 12px;
-  box-shadow: inset 0px -1px 0px #EAEAEA, inset 1px 0px 0px #EAEAEA, inset -1px 0px 0px #EAEAEA;
-}
-.content-products__text {
-  font-size: 16px;
-  line-height: 26px;
-  color: #454F5B;
-  margin: 6px 0px 10px 0px;
+@media (max-width: 61.99875em) {
+  .content-products__body {
+    grid-template-rows: 26.375rem;
+  }
 }
 .content-products__pagging {
   margin: 30px 0px 0px 0px;
@@ -5607,12 +5618,13 @@ body.popup-show::after {
   padding-bottom: 34.2741935484%;
   position: relative;
 }
-.video-company iframe {
+.video-company video {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+  background-color: black;
 }
 .video-company::before {
   content: "";
