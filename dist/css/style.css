@@ -1149,6 +1149,18 @@ body.popup-show::after {
   visibility: visible;
 }
 
+@media (max-width: 47.99875em) {
+  #catalog {
+    display: none;
+  }
+}
+
+@media (min-width: 47.99875em) {
+  #review {
+    display: none;
+  }
+}
+
 .body-popup {
   max-width: 49.375rem;
   flex: 0 0 49.375rem;
@@ -3612,7 +3624,7 @@ body.popup-show::after {
   line-height: 24px;
   color: #161C24;
 }
-@media (max-width: 61.99875em) {
+@media (max-width: 47.99875em) {
   .top-products__button {
     display: none;
   }
@@ -3620,7 +3632,7 @@ body.popup-show::after {
 .top-products__button-mobile {
   padding: 12px 64px;
 }
-@media (min-width: 61.99875em) {
+@media (min-width: 47.99875em) {
   .top-products__button-mobile {
     display: none;
   }
